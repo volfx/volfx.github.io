@@ -1,36 +1,241 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+/* a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;} */
+/* ul li{list-style: none;} */
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #E5E5E5;
-}
+    background: #E5E5E5;}
 
 .main {
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
-    margin: 0 auto;
+    margin: 10px auto 0px;
+    /* background-repeat: initial; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+    border-radius: 20px;
 }
 
 .maincontent {
     background: #ffffff;
-    box-shadow: 6px 6px 20px;
-    padding: 105px 90px;
+    padding: 45px 150px 40px 80px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .sidebar {
 background: #1E2939;
 width: 370px;
-padding-top: 40px;
+padding-top: 35px;
+border-radius: 20px 0px 0px 20px;
 }
+
+
+
+.tittleRightBlock {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px; 
+}
+
+
+.about,
+.projects,
+.experience,
+.education {
+    margin-bottom: 20px;
+    /* 40 */
+}
+
+.about-spec {
+    font-weight: 700;
+    line-height: 17px;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 10px;
+    /* 20 */
+}
+
+.about-spec-jun {
+    color: #607D8B;
+}
+.about-spec-jun:hover{
+    color: #000000;
+}
+
+.about-name {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    line-height: 24px;
+    color: #595959;
+    width: 550px;
+}
+
+
+.projects-tittle {
+    font-weight: 700;
+    color: #000000;
+}
+
+.projects-link {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.borderpro {
+    display: inline-block;
+    border: 0.5px dashed #A8A8A8;
+    width: 100px;
+}
+
+.projecthover:hover{
+    color: #000000;
+}
+
+.project-links {
+    line-height: 24px;
+    color: #595959;
+    
+}
+
+/* .work-organisation {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF5700;
+} */
+
+.work-position {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    /* margin-bottom: 20px 0; */
+    /* 5 */
+}
+
+.work-position>span{
+    color: #FF5700;  
+}
+
+.time-period {
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin: 7px 0;
+}
+
+.time-period-vertical {
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin: 0 5px;
+}
+
+.projects-list{
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+
+.about-li-work {
+    line-height: 24px;
+    color: #595959;
+    margin-left: 3px;
+    
+
+}
+
+.aboutText {
+    color: #595959;
+    line-height: 24px;
+    padding-left: 3px;
+}
+
+.university {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF5700;
+    margin-bottom: 10px;
+}
+
+.education-spec {
+    font-weight: 700;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-cert {
+    color: yellow;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 3px;
+    /* line-height: 24px;
+    color: #595959;
+    margin-left: 10px;
+    margin-top: -5px;
+    margin-bottom: 10xp; */
+}
+
+
+
 
 .photo {
     width: 370px;
-    padding-bottom: 50px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .sidebar_tittle {
     color: #ffffff;
-    font-style: normal;
-    font-weight: 700;
+     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 10px;
@@ -48,190 +253,40 @@ padding-top: 40px;
     margin-bottom: 0;
 }
 
-.contactsspan {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
+.contactdes{
+    width: auto;
+    padding: 0px 5px 0px 3px;
+    height: 16px;
     line-height: 24px;
-    color: #FFFFFF;
-    margin-right: 5px;
 }
 
 .contactlink {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     opacity: 0.5;
+    text-decoration: none;
+
+}
+.contactlink:hover{
+    color: #647687;
 }
 
 .skills-item {
-    color: #FB6D3A;
+    color: #FF5700;
 }
+
 .skills-text {
     color: #FFFFFF;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
 }
 
 .skills-list {
     padding: 0;
-    margin-left: 17px;
-}
-
-.about {
-    margin-bottom: 40px;
-}
-
-.about-spec {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-.about-spec-middle {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #607D8B;
-    margin-bottom: 20px;
-}
-
-.about-name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 55px;
-    color: #000000;
-    margin-bottom: 25px;
-}
-
-.about-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 24px;
-    color: #595959;
-    width: 400px;
-}
-
-.tittle {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.projects-tittle {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.projects-link,
-.project-links {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-}
-
-.projects-link {
-    margin-left: 10px;
-}
-
-.projects-list {
-    padding: 0;
     margin-left: 15px;
 }
 
-.projects,
-.experience {
-    margin-bottom: 45px;
-}
-
-.work-organisation {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FB6D3A;
-}
-
-.work-position {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.time-period {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #A8A8A8;
-    margin-bottom: 10px;
-}
-
-.time-period-vertical {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #000000;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.about-text-work {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-}
-
-.university {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FB6D3A;
-    margin-bottom: 10px;
-}
-
-.education-spec {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.project-cert {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    margin-left: 10px;
-    margin-top: -5px;
-    margin-bottom: 10xp;
+footer{
+    height: 0px;
+    visibility: hidden;
 }
